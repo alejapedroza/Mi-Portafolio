@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        
+      </div>
+      <div id="menu" class="navbar__menu">
+        <i id="btnClose" class='bx bx-x navbar__icon btn--close'></i>
+        <nav class="navbar__list">
+          <a class="navbar__link" href="#">Home</a>
+          <a class="navbar__link" href="#about">About</a>
+          <a class="navbar__link" href="#skills">Skills</a>
+          <a class="navbar__link" href="#experience">Experience</a>
+          <a class="navbar__link" href="#portfolio">Portfolio</a> 
+          <a class="navbar__link" href="#contact">Contact</a>
+
+        </nav>
+      </div>
+      <div class="navbar__button">
+        <i id="btnOpen" class='bx bx-menu navbar__icon btn--open'></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section id="about" class="about grid">
+      <div class="about__item">
+        < class="info">
+        <p style="text-align: center;" ><img src="\Imágenes\foto.png" alt="Profile image" > </p>
+          <div class="info__content">
+            <h2 class="info__name">Hi, I'm María Alejandra</h2>
+            <p class ="info__description">Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="social__container">
+        <div class="social__media">
+          <a class="social__icon" href="https://www.linkedin.com/in/maria-alejandra-pedroza-aa340a12b/" target="_blank">
+            <img class="social__img" src="assets/linkedin.svg" alt="">
+          </a>
+        </div>
+        <div class="social__media">
+          <a class="social__icon" href="https://www.instagram.com/maria.alejandrapd/" target="_blank">
+            <img class="social__img" src="assets/instagram.svg" alt="">
+          </a>
+        </div>
+        <div class="social__media">
+          <a class="social__icon" href="https://twitter.com/aleja_pedroza17" target="_blank">
+            <img class="social__img" src="assets/twitter.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about__section" class="about__section">
+
+      <h2 class="about__title">About me</h2>
+      <p class="about__descriptions">I consider myself a responsible, dynamic and creative person, with the ability to work in a team or individually, committed and with a great sense of belonging, always improving, clear goals; with initiative to solve problems efficiently.
+      </p>
+    </section>
+
+    <section id="Skills" class="skills">
+      <h2 class="skills__title">My skills</h2>
+      <div class="skill__mobile">
+        <img src="assets/mobile.svg" alt="">
+        <br>
+        Mobile app desing
+      </div>
+      <div class="skills__motion">
+        <img src="assets/motion.svg" alt="">
+        <br>
+        Motion Desing
+      </div>
+      <div class="skills__system">
+        <img src="assets/mail 1.svg" alt="">
+        <br>
+        Create System Desing
+      </div>
+      <div class="skills__web">
+        <img src="assets/web.svg" alt="">
+        <br>
+        Web Desing
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <h2 class="experience__title">My Experience</h2>
+      <div class="date1">2016-2018
+      </div>
+      <div class="text1">Visual designer
+        <br>
+        <span>Wizeline</span> 
+      </div>
+      <div class="date2">2018-2019
+      </div>
+      <div class="text2">Product designer
+        <br>
+        <span>Microsoft</span> 
+      </div>
+      <div class="date3">2019-2021
+      </div>
+      <div class="text3">UI Engineer
+        <br>
+        <span>Google</span> 
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <div>
+        <h2 class="portfolio__h2">Portfolio</h2>
+      </div>
+      <section class="portfolio__screen">
+        <img src="Imágenes/ejemplo 1.png" alt="">
+        <img src="Imágenes/ejemplo 2.png" alt="">
+        <img src="Imágenes/ejemplo 3.png" alt="">
+      </section>
+
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="contact__h2">Contact</h2>
+      <div class="contact__phone">
+        <img class="contact__phone__icon" src="assets/phone.svg" alt="icono telefono">
+        <p class="Contact__phone__phone">Phone number</p>
+        <font style="vertical-align: inherit;"></font>
+        <p class="contact__phone__num">3043819812</p>
+      </div>
+      <div class="contact__email">
+        <img class="contact__email__icon" src="assets/mail 1.svg" alt="icono correo electronico">
+        <p class="Contact__email__email">Email</p>
+        <p class="contact__email__mail">mpedroza354@gmail.com</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    btnClose.onclick = function () {
+      menu.classList.remove('active')
+    }
+
+    btnOpen.onclick = function () {
+      menu.classList.add('active')
+    }
+
+    menu.addEventListener('click', function (event) {
+      if (event.target.matches('.navbar__link')) {
+        menu.classList.remove('active')
+      }
+    })
+  </script>
+  <footer class="container_Footer">
+    <p>Hecho con ❤ en Academlo</p>
+  </footer>
+  </body>
+</html>
