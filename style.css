@@ -2,14 +2,16 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
+  margin: 0;
   /*box-sizing: border-box;*/
   scroll-behavior: smooth;
-  background-color: #000;
+  background-color: #c493c3;
   font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
-  --navbar-height: 60px; 
+  --navbar-height: 50px; 
 }
 
 *,
@@ -20,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 /* Navbar */
@@ -28,7 +31,7 @@ body {
   top: 0;
   width: 100%;
   height: var(--navbar-height);
-  background-color: black;
+  background-color: #884299;
   box-shadow: 0px 0px 15px -3px #00000042;
 }
 
@@ -37,12 +40,9 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  text-align: center;
   height: inherit;
   justify-content: space-between;
-}
-
-.navbar__logo {
-  padding-left: .5rem;
 }
 
 .navbar__link {
@@ -65,16 +65,12 @@ body {
 
 .navbar__menu {
   width: 100%;
-  background-color: black;
+  background-color: #884299;
   gap: 3rem;
 }
 
 .navbar__list {
   display: flex;
-}
-
-.navbar__button {
-  padding-right: .5rem;
 }
 
 .btn--close,
@@ -101,7 +97,7 @@ body {
 .info__name{
   text-align: center;
   font-size: 1.5rem;
-  color:#ADADAD;
+  color: rgb(255, 255, 255);
   font-size: 50px;
   margin-top: 1em;
   margin: 0px;
@@ -114,7 +110,6 @@ body {
   font-weight: bolder;
   width:100%;
   margin: 0;
-
 }
 
 p{
@@ -158,7 +153,7 @@ p{
   font-weight: bolder;
 }
 .about__descriptions{
-  color:#ADADAD;
+  color: rgb(255, 255, 255);
   font-size: 25px;
 
 }
@@ -323,6 +318,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    display: flex;
   }
 
   .navbar__button {
@@ -334,7 +330,7 @@ p {
   /*about section*/
 
     .social__img{
-      width: 80px;
+      width: 70px;
     }
 
     .skills {
@@ -349,16 +345,7 @@ p {
       grid-column: 1 / 3;
       font-size: 45px;
   }
-
-  .experience {
-    width: 800px;
-    margin: 0 auto;
-    color:white;
-  }
   
-  .experience__title{
-    font-size: 45px;
-  }
   .portfolio {
     margin: 100px auto 100px auto;
   }
@@ -378,6 +365,7 @@ p {
     min-width: 600px;
     margin: 4rem auto;
     color: white;
+    text-align: center;
   }
   .contact__h2 {
     text-align: center;
@@ -386,10 +374,8 @@ p {
   
   .container_Footer{
     background-color: #ffffff;
-    height: auto;
     font-size: 25px;
-    color: #f80606;
-    text-align: center;
-    margin: 0;
+    color: #af7ead;
+    text-align: center;  
   }
 }

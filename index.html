@@ -3,37 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="Imágenes/favicon-portfolio-.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Portfolio María Alejandra</title>
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="navbar">
     <div class="navbar__container">
-      <div class="navbar__logo">
-        
-      </div>
+    
       <div id="menu" class="navbar__menu">
         <i id="btnClose" class='bx bx-x navbar__icon btn--close'></i>
         <nav class="navbar__list">
           <a class="navbar__link" href="#">Home</a>
-          <a class="navbar__link" href="#about">About</a>
-          <a class="navbar__link" href="#skills">Skills</a>
-          <a class="navbar__link" href="#experience">Experience</a>
+          <a class="navbar__link" href="#about__section">About</a>
+          <a class="navbar__link" href="#Skills">Skills</a>
           <a class="navbar__link" href="#portfolio">Portfolio</a> 
           <a class="navbar__link" href="#contact">Contact</a>
 
         </nav>
-      </div>
-      <div class="navbar__button">
-        <i id="btnOpen" class='bx bx-menu navbar__icon btn--open'></i>
       </div>
     </div>
   </header>
@@ -41,8 +30,8 @@
   <main class="wrapper">
     <section id="about" class="about grid">
       <div class="about__item">
-        < class="info">
-        <p style="text-align: center;" ><img src="\Imágenes\foto.png" alt="Profile image" > </p>
+        
+        <p style="text-align: center;" ><img src="\Imágenes\foto.png" alt="Profile image" style="border-radius: 50%;"> </p>
           <div class="info__content">
             <h2 class="info__name">Hi, I'm María Alejandra</h2>
             <p class ="info__description">Web Developer</p>
@@ -77,46 +66,30 @@
 
     <section id="Skills" class="skills">
       <h2 class="skills__title">My skills</h2>
-      <div class="skill__mobile">
-        <img src="assets/mobile.svg" alt="">
+      <div class="skill__react">
+        <img src="Imágenes/React.png" alt="">
         <br>
-        Mobile app desing
+        React
       </div>
-      <div class="skills__motion">
-        <img src="assets/motion.svg" alt="">
+      <div class="skills__js">
+        <img src="Imágenes/JavaScript.png" alt="">
         <br>
-        Motion Desing
+        JavaScript
       </div>
-      <div class="skills__system">
-        <img src="assets/mail 1.svg" alt="">
+      <div class="skills__html">
+        <img src="Imágenes/html.png" alt="">
         <br>
-        Create System Desing
+        HTML
       </div>
-      <div class="skills__web">
-        <img src="assets/web.svg" alt="">
+      <div class="skills__css">
+        <img src="Imágenes/css.png" alt="">
         <br>
-        Web Desing
+        CSS
       </div>
-    </section>
-    <section id="experience" class="experience">
-      <h2 class="experience__title">My Experience</h2>
-      <div class="date1">2016-2018
-      </div>
-      <div class="text1">Visual designer
+      <div class="skills__tailwindcss">
+        <img src="Imágenes/Tailwindcss.png" alt="">
         <br>
-        <span>Wizeline</span> 
-      </div>
-      <div class="date2">2018-2019
-      </div>
-      <div class="text2">Product designer
-        <br>
-        <span>Microsoft</span> 
-      </div>
-      <div class="date3">2019-2021
-      </div>
-      <div class="text3">UI Engineer
-        <br>
-        <span>Google</span> 
+        Tailwindcss
       </div>
     </section>
     <section id="portfolio" class="portfolio">
@@ -124,9 +97,21 @@
         <h2 class="portfolio__h2">Portfolio</h2>
       </div>
       <section class="portfolio__screen">
-        <img src="Imágenes/ejemplo 1.png" alt="">
-        <img src="Imágenes/ejemplo 2.png" alt="">
-        <img src="Imágenes/ejemplo 3.png" alt="">
+        <div class="portfolio_Pokedex">
+          <a href="https://pokedexmp.netlify.app/pokedex" target="_blank">
+            <img  src="Imágenes/Pokedex.jpeg" alt="">
+          </a>
+        </div>
+        <div class="portfolio_UsersCrud">
+          <a href="https://userscrudmp.netlify.app" target="_blank">
+            <img  src="Imágenes/crud.jpeg" alt="">
+          </a>
+        </div>
+        <div class="portfolio_Pokedex">
+          <a href="https://e-commercemp.netlify.app" target="_blank">
+            <img  src="Imágenes/e-commerce.jpeg" alt="">
+          </a>
+        </div>
       </section>
 
     </section>
@@ -162,7 +147,7 @@
     })
   </script>
   <footer class="container_Footer">
-    <p>Hecho con ❤ en Academlo</p>
+    <p> Made by María Alejandra ❤ </p>
   </footer>
   </body>
 </html>
